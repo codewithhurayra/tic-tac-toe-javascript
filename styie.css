@@ -1,0 +1,92 @@
+:root {
+  --backgound-color: rgb(116, 113, 113);
+  --text-color: rgb(0, 0, 0);
+  --Snd-color: rgb(161, 145, 75);
+  --logo-color: rgb(255, 251, 0);
+  --icon-color: rgb(110, 110, 110);
+}
+.darkmode {
+  --backgound-color: rgb(4, 7, 34);
+  --text-color: white;
+  --Snd-color: rgb(105, 107, 102);
+  --logo-color: rgb(116, 102, 240);
+  --icon-color: rgb(110, 110, 110);
+}
+body {
+  background-color: var(--backgound-color);
+}
+.Game {
+  width: 98%;
+  max-width: 700px;
+  display: flex;
+}
+.cantainerOfgame {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+.gameBtns {
+  flex: 1 1 calc(33.333% - 10px);
+  height: 120px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--Snd-color);
+  color: var(--text-color);
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  color: var(--logo-color);
+  font-size: 33px;
+  font-weight: 900;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.themChange {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.themChange img:last-child {
+  display: none;
+}
+.darkmode .themChange img:first-child {
+  display: none;
+}
+.darkmode .themChange img:last-child {
+  display: block;
+}
+
+.msg {
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-color);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+
+@media screen and (max-width: 1200px) {
+  .Game {
+    margin-left: 90px;
+  }
+  /* Add any necessary styles here */
+}
+@media screen and (max-width: 810px) {
+  .Game {
+    margin: 0;
+    margin-left: 20px;
+  }
+}
